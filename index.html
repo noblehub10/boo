@@ -7,6 +7,9 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="A little sunflower, and a lot of love, for Shagun from Prince.">
   <title>Bloom · For Shagun, from Prince</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23235f8b'/%3E%3Ccircle cx='32' cy='30' r='12' fill='%2352341b'/%3E%3Cg fill='%23f6c32d'%3E%3Cellipse cx='32' cy='12' rx='7' ry='12'/%3E%3Cellipse cx='32' cy='48' rx='7' ry='12'/%3E%3Cellipse cx='14' cy='30' rx='12' ry='7'/%3E%3Cellipse cx='50' cy='30' rx='12' ry='7'/%3E%3Cellipse cx='19' cy='17' rx='7' ry='11' transform='rotate(-45 19 17)'/%3E%3Cellipse cx='45' cy='17' rx='7' ry='11' transform='rotate(45 45 17)'/%3E%3Cellipse cx='19' cy='43' rx='7' ry='11' transform='rotate(45 19 43)'/%3E%3Cellipse cx='45' cy='43' rx='7' ry='11' transform='rotate(-45 45 43)'/%3E%3C/g%3E%3Ccircle cx='32' cy='30' r='10' fill='%23432918'/%3E%3C/svg%3E">
   <style>
     :root { color-scheme: dark; --blue: #235f8b; --blue-deep: #153f64; --cream: #ffe8c9; --gold: #ffce3b; --ink: #173b58; }
@@ -52,10 +55,10 @@
     .after-inner { max-width: 900px; margin: 0 auto; }
     .small-label { margin: 0 0 22px; color: #fcd26a; font-size: .75rem; font-weight: 800; letter-spacing: .28em; text-transform: uppercase; }
     .after h2 { max-width: 750px; margin: 0 auto 72px; color: var(--cream); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.15rem, 5vw, 4.6rem); font-weight: 400; line-height: 1.17; letter-spacing: -.035em; text-wrap: balance; }
-    .quotes { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: clamp(20px, 5vw, 80px); margin-bottom: 0; text-align: left; }
-    .quote { padding-top: 24px; border-top: 1px solid rgba(255,232,201,.48); }
-    .quote span { display: block; margin-bottom: 18px; color: #fbd36d; font: 2rem Georgia, serif; }
-    .quote p { margin: 0; font: clamp(1.2rem, 2.2vw, 1.65rem)/1.45 Georgia, 'Times New Roman', serif; text-wrap: balance; }
+    .quotes { max-width: 680px; margin: 0 auto; text-align: center; }
+    .quote + .quote { margin-top: 32px; }
+    .quote + .quote::before { content: ""; display: block; width: 42px; height: 1px; margin: 0 auto 32px; background: rgba(255,232,201,.75); }
+    .quote p { max-width: 590px; margin: 0 auto; font-family: 'Bodoni Moda', Georgia, 'Times New Roman', serif; font-size: clamp(1.35rem, 2.7vw, 1.9rem); font-weight: 400; line-height: 1.4; letter-spacing: .005em; text-wrap: balance; }
     dialog { width: min(90vw, 490px); max-height: min(78svh, 650px); padding: clamp(28px, 7vw, 48px); border: 0; border-radius: 4px; color: var(--ink); background: #fff0d3; box-shadow: 0 25px 90px rgba(0,18,36,.4); overflow: auto; }
     dialog::backdrop { background: rgba(6,32,55,.65); backdrop-filter: blur(4px); }
     .dialog-kicker { margin: 0 40px 38px 0; color: #94631e; font-size: .75rem; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; }
@@ -85,7 +88,8 @@
       .poster-foot { bottom: 25px; font-size: .67rem; gap: 12px; }
       .poster-foot i { width: 25px; }
       .after h2 { margin-bottom: 52px; }
-      .quotes { grid-template-columns: 1fr; gap: 40px; margin-bottom: 0; }
+      .quote + .quote { margin-top: 28px; }
+      .quote + .quote::before { margin-bottom: 28px; }
     }
     @media (max-width: 390px) {
       .poster { min-height: 820px; }
@@ -120,8 +124,8 @@
         <p class="small-label">A little light, wherever we are</p>
         <h2>Some people feel like sunshine. You feel like the place I want to grow.</h2>
         <div class="quotes">
-          <div class="quote"><span aria-hidden="true">✳</span><p>May we keep finding the light in each other, even on the cloudiest days.</p></div>
-          <div class="quote"><span aria-hidden="true">✳</span><p>If love is a sunflower, ours is all the little ways we turn toward each other.</p></div>
+          <div class="quote"><p>May we keep finding the light in each other, even on the cloudiest days.</p></div>
+          <div class="quote"><p>If love is a sunflower, ours is all the little ways we turn toward each other.</p></div>
         </div>
       </div>
     </section>
