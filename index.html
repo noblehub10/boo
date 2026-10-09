@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#235f8b">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A little sunflower, and a lot of love, for Shagun from Prince.">
+  <title>Bloom · For Shagun, from Prince</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23235f8b'/%3E%3Ccircle cx='32' cy='30' r='12' fill='%2352341b'/%3E%3Cg fill='%23f6c32d'%3E%3Cellipse cx='32' cy='12' rx='7' ry='12'/%3E%3Cellipse cx='32' cy='48' rx='7' ry='12'/%3E%3Cellipse cx='14' cy='30' rx='12' ry='7'/%3E%3Cellipse cx='50' cy='30' rx='12' ry='7'/%3E%3Cellipse cx='19' cy='17' rx='7' ry='11' transform='rotate(-45 19 17)'/%3E%3Cellipse cx='45' cy='17' rx='7' ry='11' transform='rotate(45 45 17)'/%3E%3Cellipse cx='19' cy='43' rx='7' ry='11' transform='rotate(45 19 43)'/%3E%3Cellipse cx='45' cy='43' rx='7' ry='11' transform='rotate(-45 45 43)'/%3E%3C/g%3E%3Ccircle cx='32' cy='30' r='10' fill='%23432918'/%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: dark; --blue: #235f8b; --blue-deep: #153f64; --cream: #ffe8c9; --gold: #ffce3b; --ink: #173b58; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--blue-deep); color: var(--cream); font-family: Arial, Helvetica, sans-serif; }
+    button { font: inherit; }
+    .page { overflow: hidden; }
+    .poster {
+      position: relative; isolation: isolate; min-height: 100svh; overflow: hidden;
+      background:
+        radial-gradient(ellipse 70% 50% at -7% -8%, rgba(255,224,111,.36), transparent 70%),
+        radial-gradient(ellipse 70% 55% at 50% 48%, rgba(75,151,184,.34), transparent 75%),
+        linear-gradient(160deg, #306f9c 0%, #23618e 58%, #1e527b 100%);
+    }
+    .poster::before {
+      content: ""; position: absolute; z-index: -1; inset: 0; opacity: .23; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+    }
+    .sunlight { position: absolute; z-index: 1; pointer-events: none; width: min(75vw, 850px); height: min(90vh, 850px); left: -34vw; top: -42vh; transform: rotate(-21deg); background: radial-gradient(ellipse, rgba(255,234,142,.43), rgba(255,231,133,.15) 35%, transparent 69%); filter: blur(24px); animation: sunshine 9s ease-in-out infinite alternate; }
+    .rays { position: absolute; z-index: 1; pointer-events: none; left: -8%; top: -15%; width: 55%; height: 100%; opacity: .3; background: repeating-conic-gradient(from -53deg at 0 0, rgba(255,241,183,.25) 0deg 7deg, transparent 8deg 21deg); mask-image: linear-gradient(100deg, #000, transparent 75%); }
+    .topline { position: absolute; z-index: 3; left: clamp(20px, 4vw, 60px); top: clamp(21px, 3.2vw, 44px); font-size: .74rem; font-weight: 700; letter-spacing: .27em; text-transform: uppercase; }
+    .bloom { position: absolute; z-index: 1; top: clamp(74px, 10vw, 120px); left: 50%; width: max-content; margin: 0; transform: translateX(-50%); color: var(--cream); font-family: Impact, 'Arial Narrow', 'Arial Black', sans-serif; font-stretch: condensed; font-size: clamp(7rem, 24vw, 22rem); font-weight: 900; line-height: .76; letter-spacing: -.035em; text-align: center; text-transform: uppercase; user-select: none; }
+    .flower-stage { position: relative; z-index: 2; width: min(61vw, 640px); min-width: 420px; margin: clamp(205px, 18vw, 275px) auto 0; filter: drop-shadow(0 23px 20px rgba(10,40,59,.18)); }
+    .flower-sway { position: relative; width: 100%; transform-origin: 52% 96%; animation: sway 6.8s ease-in-out infinite alternate; }
+    .flower-image { position: relative; display: block; width: 100%; height: auto; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+    .center-photo { position: absolute; z-index: 1; left: 52%; top: 32.4%; width: 29%; aspect-ratio: 3 / 4; transform: translate(-50%, -50%); overflow: hidden; border-radius: 50%; background: #654019; box-shadow: 0 0 0 5px #4b2d12, 0 0 0 8px rgba(216,148,30,.72); pointer-events: none; }
+    .center-photo img { position: absolute; left: -16.6665%; top: 12.5%; display: block; width: 133.333%; height: 75%; max-width: none; transform: rotate(-90deg); object-fit: cover; filter: saturate(.88) contrast(1.07) brightness(.98); }
+    .center-photo::after { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)'/%3E%3C/svg%3E"); opacity: .23; mix-blend-mode: soft-light; pointer-events: none; }
+    .flower-foreground { position: absolute; z-index: 2; inset: 0; display: block; width: 100%; height: auto; pointer-events: none; user-select: none; -webkit-mask-image: radial-gradient(ellipse 17% 17% at 52% 32.4%, transparent 0 80%, #000 100%); mask-image: radial-gradient(ellipse 17% 17% at 52% 32.4%, transparent 0 80%, #000 100%); }
+    .petal-hit { position: absolute; z-index: 3; display: block; width: 11.5%; min-width: 40px; height: 17.5%; min-height: 76px; padding: 0; border: 0; border-radius: 65% 65% 52% 52%; background: transparent; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background-color .25s ease, box-shadow .25s ease; }
+    .petal-hit:hover, .petal-hit:focus-visible { outline: 0; background: rgba(255,248,194,.15); box-shadow: inset 0 0 0 2px rgba(255,247,205,.5), 0 0 18px rgba(255,219,91,.38); }
+    .petal-hit:active { background: rgba(255,250,207,.25); }
+    .petal-hit.first { animation: discover 8s 2s infinite; }
+    .left-note, .right-note { position: absolute; z-index: 3; max-width: 205px; font-size: clamp(.86rem, 1.2vw, 1rem); font-weight: 600; line-height: 1.45; text-wrap: balance; }
+    .left-note { left: max(5vw, 28px); top: 62%; }
+    .right-note { right: max(5vw, 28px); top: 47%; text-align: right; }
+    .left-note::before, .right-note::before { content: ""; display: block; width: 36px; height: 2px; margin-bottom: 18px; background: var(--cream); }
+    .right-note::before { margin-left: auto; }
+    .poster-foot { position: absolute; z-index: 3; left: 50%; bottom: 21px; transform: translateX(-50%); display: flex; align-items: center; gap: clamp(14px, 2.5vw, 42px); white-space: nowrap; font-size: clamp(.7rem, 1.7vw, 1.15rem); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .poster-foot i { display: block; width: clamp(20px, 7vw, 85px); height: 1px; background: currentColor; opacity: .7; }
+    .after { position: relative; padding: clamp(66px, 10vw, 140px) 22px clamp(60px, 8vw, 100px); background: linear-gradient(180deg, #163f64, #102f4d); text-align: center; }
+    .after-inner { max-width: 900px; margin: 0 auto; }
+    .small-label { margin: 0 0 22px; color: #fcd26a; font-size: .75rem; font-weight: 800; letter-spacing: .28em; text-transform: uppercase; }
+    .after h2 { max-width: 750px; margin: 0 auto 72px; color: var(--cream); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.15rem, 5vw, 4.6rem); font-weight: 400; line-height: 1.17; letter-spacing: -.035em; text-wrap: balance; }
+    .quotes { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: clamp(20px, 5vw, 80px); margin-bottom: 0; text-align: left; }
+    .quote { padding-top: 24px; border-top: 1px solid rgba(255,232,201,.48); }
+    .quote span { display: block; margin-bottom: 18px; color: #fbd36d; font: 2rem Georgia, serif; }
+    .quote p { margin: 0; font: clamp(1.2rem, 2.2vw, 1.65rem)/1.45 Georgia, 'Times New Roman', serif; text-wrap: balance; }
+    dialog { width: min(90vw, 490px); max-height: min(78svh, 650px); padding: clamp(28px, 7vw, 48px); border: 0; border-radius: 4px; color: var(--ink); background: #fff0d3; box-shadow: 0 25px 90px rgba(0,18,36,.4); overflow: auto; }
+    dialog::backdrop { background: rgba(6,32,55,.65); backdrop-filter: blur(4px); }
+    .dialog-kicker { margin: 0 40px 38px 0; color: #94631e; font-size: .75rem; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; }
+    .dialog-note { margin: 0; font: clamp(1.7rem, 6vw, 2.4rem)/1.24 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; overflow-wrap: anywhere; }
+    .dialog-from { margin: 38px 0 0; font: italic 1.1rem Georgia, serif; }
+    .dialog-close { position: absolute; right: 13px; top: 11px; width: 48px; height: 48px; border: 0; border-radius: 50%; color: var(--ink); background: transparent; font-size: 1.9rem; line-height: 1; cursor: pointer; }
+    .dialog-close:hover, .dialog-close:focus-visible { background: #f7dbab; outline: 2px solid #94631e; }
+    @keyframes sway { from { transform: rotate(-2.1deg) translateX(-4px); } to { transform: rotate(2.3deg) translateX(5px); } }
+    @keyframes sunshine { to { opacity: .68; transform: rotate(-17deg) scale(1.1); } }
+    @keyframes discover { 0%, 80%, 100% { box-shadow: none; background: transparent; } 86% { box-shadow: 0 0 23px rgba(255,244,154,.75); background: rgba(255,251,208,.16); } }
+    @media (max-width: 950px) {
+      .poster { min-height: 920px; }
+      .bloom { top: 102px; font-size: 24vw; }
+      .flower-stage { width: min(68vw, 580px); min-width: 390px; margin-top: 230px; }
+      .left-note { top: auto; bottom: 120px; }
+      .right-note { top: auto; bottom: 120px; }
+    }
+    @media (max-width: 680px) {
+      .poster { min-height: 850px; }
+      .topline { top: 25px; left: 23px; font-size: .68rem; }
+      .bloom { top: 105px; font-size: 25.5vw; letter-spacing: -.04em; }
+      .flower-stage { width: min(104vw, 520px); min-width: 0; margin-top: 194px; margin-left: 50%; transform: translateX(-50%); }
+      .petal-hit { min-width: 37px; min-height: 66px; }
+      .left-note, .right-note { bottom: 96px; max-width: 42%; font-size: .82rem; }
+      .left-note { left: 24px; }
+      .right-note { right: 24px; }
+      .poster-foot { bottom: 25px; font-size: .67rem; gap: 12px; }
+      .poster-foot i { width: 25px; }
+      .after h2 { margin-bottom: 52px; }
+      .quotes { grid-template-columns: 1fr; gap: 40px; margin-bottom: 0; }
+    }
+    @media (max-width: 390px) {
+      .poster { min-height: 820px; }
+      .flower-stage { margin-top: 182px; }
+      .left-note, .right-note { bottom: 88px; font-size: .76rem; }
+      .left-note { left: 18px; }
+      .right-note { right: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .flower-sway, .sunlight, .petal-hit.first { animation: none; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="poster" aria-label="Bloom, a sunflower for Shagun">
+      <div class="sunlight" aria-hidden="true"></div>
+      <div class="rays" aria-hidden="true"></div>
+      <p class="topline">For Shagun, from Prince</p>
+      <h1 class="bloom">BLOOM</h1>
+      <div class="flower-stage">
+        <div class="flower-sway" id="flower">
+          <img class="flower-image" src="sunflower.png" width="1067" height="1408" alt="A golden sunflower turning toward the light" fetchpriority="high">
+          <div class="center-photo"><img src="center-photo-original.jpeg" width="1280" height="960" alt="Shagun and Prince smiling together"></div>
+          <img class="flower-foreground" src="sunflower.png" width="1067" height="1408" alt="" aria-hidden="true">
+        </div>
+      </div>
+      <p class="left-note">With you, even the ordinary days feel sunlit.</p>
+      <p class="right-note">The way sunflowers turn toward light, I keep turning toward you.</p>
+      <div class="poster-foot"><span>Growth</span><i></i><span>Joy</span><i></i><span>Us</span></div>
+    </section>
+    <section class="after" aria-label="Sunflower thoughts">
+      <div class="after-inner">
+        <p class="small-label">A little light, wherever we are</p>
+        <h2>Some people feel like sunshine. You feel like the place I want to grow.</h2>
+        <div class="quotes">
+          <div class="quote"><span aria-hidden="true">✳</span><p>May we keep finding the light in each other, even on the cloudiest days.</p></div>
+          <div class="quote"><span aria-hidden="true">✳</span><p>If love is a sunflower, ours is all the little ways we turn toward each other.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog id="love-note" aria-labelledby="dialog-title">
+    <button class="dialog-close" id="close-note" type="button" aria-label="Close note">×</button>
+    <p class="dialog-kicker" id="dialog-title">For you, Shagun</p>
+    <p class="dialog-note" id="note-text"></p>
+    <p class="dialog-from">— Prince</p>
+  </dialog>
+  <script>
+    const notes = [
+      "Be my model, I'll be your photographer.",
+      "I adore you, you turn me on, you fascinate me, you drive me crazy.",
+      "Every piece of you I learn only reminds me how much I don't know.",
+      "Sometimes I want to hug you so tightly that the idea of where I end and where you begin stops making sense.",
+      "I wanna be the reason you think of home and don't picture a place anymore.",
+      "If I was a sunflower and you were a sunflower, I would spend all day turning toward you and the humans would blame the sun.",
+      "Mujhe 2 hafte pehle pata chala Cingulomaniac disorder hai mujhe.",
+      "In the most selfish way possible, I hope no one ever knows you the way I know you.",
+      "The first time I heard your voice, I knew I wanted to hear it for the rest of my life.",
+      "If anything made me believe in past lives, it was meeting you. Something felt strangely familiar. Not a spark, something else.",
+      "When I say I want to do life with you, I mean...",
+      "I want to make grocery lists with you every week.",
+      "I want to pick out furniture and fabrics with you.",
+      "I want to hold hands during drives.",
+      "I want to wander aimlessly through nuks and corners of the world with you.",
+      "I want to slow dance in the kitchen as we wait for the food.",
+      "We weren't promised this. We could've missed each other, and yet here we are. Luck doesn't even cover it.",
+      "I wish we could spend a whole week in bed just cuddling, nowhere to be and nothing to prove. Disappear for a while, turn off our phones.",
+      "I cherish our little routines, little arguments, check-ins, nicknames, little similarities, little differences.",
+      "It's not easy to let someone get close, to risk being seen and not understood. But you did, you let me in. To know you like this is a privilege I don't take lightly.",
+      "You went from someone I didn't know existed to someone I can't imagine my life without."
+    ];
+    const flower = document.getElementById('flower');
+    const dialog = document.getElementById('love-note');
+    const noteText = document.getElementById('note-text');
+    const close = document.getElementById('close-note');
+    notes.forEach((note, index) => {
+      const outer = index < 14;
+      const angle = (-90 + (outer ? index * (360 / 14) : (index - 14) * (360 / 7) + 12)) * Math.PI / 180;
+      const radiusX = outer ? 31 : 20;
+      const radiusY = outer ? 21 : 13.5;
+      const x = 52 + Math.cos(angle) * radiusX;
+      const y = 32.4 + Math.sin(angle) * radiusY;
+      const button = document.createElement('button');
+      button.className = 'petal-hit' + (index === 3 ? ' first' : '');
+      button.type = 'button';
+      button.setAttribute('aria-label', `Open a note from Prince, petal ${index + 1}`);
+      button.setAttribute('aria-haspopup', 'dialog');
+      button.style.left = `${x}%`;
+      button.style.top = `${y}%`;
+      button.style.transform = `translate(-50%, -50%) rotate(${angle * 180 / Math.PI + 90}deg)`;
+      button.addEventListener('click', () => { noteText.textContent = note; dialog.showModal(); });
+      flower.appendChild(button);
+    });
+    close.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  </script>
+</body>
+</html>
